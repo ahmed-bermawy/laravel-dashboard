@@ -83,7 +83,7 @@ class FilesServiceProvider extends ServiceProvider
         $version = substr(app()->version(), 0, 1);
         if ($version == '7') {
             return $seedsPath = 'database/seeds/dashboard/';
-        } else if ($version == '8') {
+        } else if ($version == '8'||$version == '9') {
             return $seedsPath = 'database/seeders/dashboard/';
         } else {
             die();
