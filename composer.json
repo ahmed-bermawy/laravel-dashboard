@@ -1,0 +1,30 @@
+{
+    "name": "ahmed-bermawy/laravel-dashboard",
+    "description": "simple laravel dashboard that you can add it to your project at anytime",
+    "type": "library",
+    "require": {
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "laravelDashboard\\": "src/",
+            "laravelDashboard\\Packages\\": "src/Packages/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "laravelDashboard\\DashboardServiceProvider",
+                "laravelDashboard\\FilesServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Incubator",
+            "email": "info@incubator-eg.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

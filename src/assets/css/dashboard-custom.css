@@ -1,0 +1,188 @@
+/*
+Pleas don't add you css style in this file
+this file for dashboard only
+*/
+table.data-table tr td p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+table.data-table tr td .action {
+    max-width: 50px;
+}
+.custom_search select {
+    height: 34px;
+}
+.delete_form .delete_submit_btn {
+    padding: 0px 5px;
+    font-size: 12px;
+}
+.log_wrapper {
+    padding:30px;
+}
+.log_wrapper img
+{
+    margin: 0 auto;
+}
+
+.sidebar-form input[type="text"]
+{
+    color: #fff !important;
+}
+
+.sidebar-form input[type="text"]:focus {
+    color: #374850 !important;
+}
+/*****Map*******/
+.map, .map .container-fluid {
+    padding: 0;
+}
+
+.map_wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.map_wrapper .loading {
+    position: absolute;
+    top: 170px;
+    left: 30%;
+    z-index: 999;
+    background-color: rgba(206, 209, 215, 0.8);
+    display: none;
+}
+
+.gm-style-iw p {
+    color: #333 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.map_wrapper .zoom {
+    position: absolute;
+    z-index: 999;
+    padding: 10px;
+    background-color: rgba(206, 209, 215, 0.8);
+    display: none;
+}
+
+#map {
+    min-height: 500px;
+}
+
+.map .content {
+    margin-top: 60px;
+}
+
+#search {
+    line-height: 30px;
+}
+
+#search #address {
+    width: 100%;
+}
+
+.location {
+    padding: 10px 0;
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 14%;
+    }
+}
+
+#table_container .list-group {
+    list-style: none;
+    margin: 0;
+}
+
+#table_container table {
+    margin: 0;
+}
+
+#table_container.table-responsive {
+    overflow-x: inherit;
+}
+
+#table_container tr td, #table_container tr th {
+    width: 17%;
+}
+
+.page_navigation a {
+    padding: 4px
+}
+
+.clear {
+    clear: both;
+}
+
+.vertical_separation {
+    margin: 20px;
+}
+
+table td.action a {
+    padding: 3px;
+}
+
+table tr.about_to_delete {
+    background: rgba(195, 0, 0, 0.22) !important;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+
+table tr.destroy_tr {
+    -moz-transform: scale(0) rotate(0) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(0) rotate(0) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(0) rotate(0) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(0) rotate(0) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(0) rotate(0) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.modal-body p {
+    word-break: break-all;
+}
+
+.treeview-menu li.active-submenu > a {
+    color: #fff !important;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+
+}
+
+ul.treeview-menu li.active {
+    font-weight: bold;
+}
+
+.treeview-menu > li > a {
+    border-left: 3px solid transparent;
+    margin-left: -3px;
+}
+
+.table > tbody > tr > td {
+    max-width: 400px;
+}
+
+.table > tbody > tr > td.active {
+    background-color: transparent;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.thumbnail
+{
+    max-width:100px;
+}
+
