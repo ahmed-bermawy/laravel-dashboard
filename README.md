@@ -8,20 +8,7 @@
 
 ## This is steps to install website dashboard
 
-### 1. Make sure you have nodejs, npm and bower installed on your machine
-
-
-```bash
-sudo apt-get update
-```
-
-```bash
-sudo apt-get install nodejs
-```
-
-```bash
-sudo apt install yarn
-```
+### 1. Make sure you have nodejs, npm and yarn installed on your machine
 
 ### 2. Run composer require PackageName
 
