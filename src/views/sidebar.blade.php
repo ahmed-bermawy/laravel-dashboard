@@ -53,46 +53,15 @@
                         @endcan
                     </ul>
                 </li>
-                <li
-                    class="nav-item {{ Request::segment(2) == 'admins' || Request::segment(2) == 'roles' || Request::segment(2) == 'permissions' ? 'menu-is-opening menu-open' : '' }}">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users-cog"></i>
-                        <p>
-                            Administrator
-                            <i class="fas fa-angle-left right"></i>
-                            <span class="badge badge-info right"></span>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        @can('admin-view')
-                            <li class="nav-item">
-                                <a href="{{ url('/dashboard/admins') }}"
-                                   class="nav-link {{ Request::segment(2) == 'admins' ? 'active' : '' }}">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p> Admins </p>
-                                </a>
-                            </li>
-                        @endcan
-                        @can('role-view')
-                            <li class="nav-item">
-                                <a href="{{ url('/dashboard/roles') }}"
-                                   class="nav-link {{ Request::segment(2) == 'roles' ? 'active' : '' }}">
-                                    <i class="fab fa-critical-role"></i>
-                                    <p> Roles </p>
-                                </a>
-                            </li>
-                        @endcan
-                        @can('permission-view')
-                            <li class="nav-item">
-                                <a href="{{ url('/dashboard/permissions') }}"
-                                   class="nav-link {{ Request::segment(2) == 'permissions' ? 'active' : '' }}">
-                                    <i class="fab fa-critical-role"></i>
-                                    <p> Permissions </p>
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
+                @can('backendproduct-view')
+                    <li class="nav-item">
+                        <a href="{{ url('/dashboard/backendproducts') }}"
+                           class="nav-link {{ Request::segment(2) == 'backendproducts' ? 'active' : '' }}">
+                            <i class="fab fa-product-hunt"></i>
+                            <p> Products </p>
+                        </a>
+                    </li>
+                @endcan
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
