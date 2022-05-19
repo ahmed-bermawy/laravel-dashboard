@@ -156,7 +156,7 @@ class BackendProductController extends DashboardController
     {
         $this->authorize($this->controllerName . '-view');
         $display['path'] = $this->path;
-        $display['pageTitle'] = $this->pageTitle;
+        $display['pageTitle'] = "products";
         $display['tableName'] = $this->tableName;
         $display['tablePk'] = $this->tablePk;
         $display['tableHeader'] = $this->tableColumns;
