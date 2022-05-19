@@ -63,12 +63,48 @@ default dashboard path=> "http://127.0.0.1:8000/dashboard/login"
 default username=> "admin@admin.com" 
 default password => "12345678"
 ```
+<hr>
 
 # Documentation 
 Please see
 <a href="https://dashboard.incubator-eg.com/">Incubator</a>
 for more information.
 
+<hr>
+
 # Issues
 If you discover any issues, please email <a href="mailto:info@incubator-eg.com?subject=New issue report" target="_blank">info@incubator-eg.com
 </a>
+<hr>
+
+# Credits
+This package wont be possible without the following, We acknowledge and are grateful to these packages developers to open source. All necessary credits are given.
+
+<ul>
+<li>
+    <a href="https://github.com/twbs/bootstrap" target="_blank">
+        Bootstrap
+    </a>
+</li>
+<li>
+    <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">
+        Font Awesome
+    </a>
+</li>
+<li>
+    <a href="https://github.com/ColorlibHQ/AdminLTE" target="_blank">
+         Admin LTE
+    </a>
+</li>
+<li>
+    <a href="https://github.com/spatie/laravel-permission" target="_blank">
+         Laravel Permission
+    </a>
+</li>
+<li>
+    <a href="https://github.com/LaravelCollective/html" target="_blank">
+         Laravel Collective
+    </a>
+</li>
+
+</ul>
