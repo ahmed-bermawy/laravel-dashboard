@@ -29,6 +29,31 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-header">DASHBOARD</li>
                 <li
+                        class="nav-item {{ Request::segment(2) == 'backendproducts' ? 'menu-is-opening menu-open' : '' }}">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-store"></i>
+                        <p>
+                            Products
+                            <i class="fas fa-angle-left right"></i>
+                            {{--                            <i class="fas fa-store right"></i>--}}
+
+
+                            <span class="badge badge-info right"></span>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        @can('backendproduct-view')
+                            <li class="nav-item">
+                                <a href="{{ url('/dashboard/backendproducts') }}"
+                                   class="nav-link {{ Request::segment(2) == 'backendproducts' ? 'active' : '' }}">
+                                    <i class="fab fa-product-hunt"></i>
+                                    <p> Products </p>
+                                </a>
+                            </li>
+                        @endcan
+                    </ul>
+                </li>
+                <li
                     class="nav-item {{ Request::segment(2) == 'admins' || Request::segment(2) == 'roles' || Request::segment(2) == 'permissions' ? 'menu-is-opening menu-open' : '' }}">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users-cog"></i>
@@ -63,31 +88,6 @@
                                    class="nav-link {{ Request::segment(2) == 'permissions' ? 'active' : '' }}">
                                     <i class="fab fa-critical-role"></i>
                                     <p> Permissions </p>
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
-                <li
-                    class="nav-item {{ Request::segment(2) == 'backendproducts' ? 'menu-is-opening menu-open' : '' }}">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-store"></i>
-                        <p>
-                            Products
-                            <i class="fas fa-angle-left right"></i>
-{{--                            <i class="fas fa-store right"></i>--}}
-
-
-                            <span class="badge badge-info right"></span>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        @can('backendproduct-view')
-                            <li class="nav-item">
-                                <a href="{{ url('/dashboard/backendproducts') }}"
-                                   class="nav-link {{ Request::segment(2) == 'backendproducts' ? 'active' : '' }}">
-                                    <i class="fab fa-product-hunt"></i>
-                                    <p> Products </p>
                                 </a>
                             </li>
                         @endcan
