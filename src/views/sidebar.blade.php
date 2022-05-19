@@ -13,7 +13,7 @@
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 @if (!empty(Auth::user()->image))
-                    <img src="{{ url('uploads/admin/' . auth()->user()->image) }}" class="img-circle elevation-2"
+                    <img src="{{ url('uploads/admin/' . auth()->user()->image) }}" class="bg-light img-circle elevation-2"
                          alt="User Image"/>
                 @else
                     <img src="{{ asset('img/dashboard/avatar.png') }}" class="img-circle elevation-2" alt="User Image">
