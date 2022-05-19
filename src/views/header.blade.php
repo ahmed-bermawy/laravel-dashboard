@@ -15,7 +15,7 @@
     <ul class="navbar-nav ml-auto">
         <!-- Navbar Search -->
         <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button" title="search">
                 <i class="fas fa-search"></i>
             </a>
             <div class="navbar-search-block">
@@ -38,13 +38,13 @@
         {{--        Custom Search --}}
         @if(empty(request()->segment(3)))
         <li class="nav-item">
-            <a class="nav-link" type="button" data-toggle="modal" data-target="#exampleModal">
+            <a class="nav-link" type="button" data-toggle="modal" data-target="#exampleModal" title="Advance Search">
                 <i class="fas fa-search-plus"></i>
             </a>
         </li>
         @endif
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/dashboard/logout') }}" role="button">
+            <a class="nav-link" href="{{ url('/dashboard/logout') }}" role="button" title="logout">
                 <i class="fas fa-sign-out-alt"></i>
             </a>
         </li>
