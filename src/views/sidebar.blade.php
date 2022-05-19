@@ -28,6 +28,15 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-header">DASHBOARD</li>
+                @can('backendproduct-view')
+                    <li class="nav-item">
+                        <a href="{{ url('/dashboard/backendproducts') }}"
+                           class="nav-link {{ Request::segment(2) == 'backendproducts' ? 'active' : '' }}">
+                            <i class="fab fa-product-hunt"></i>
+                            <p> Products </p>
+                        </a>
+                    </li>
+                @endcan
                 <li
                         class="nav-item {{ Request::segment(2) == 'admins' || Request::segment(2) == 'roles' || Request::segment(2) == 'permissions' ? 'menu-is-opening menu-open' : '' }}">
                     <a href="#" class="nav-link">
@@ -68,15 +77,6 @@
                         @endcan
                     </ul>
                 </li>
-                @can('backendproduct-view')
-                    <li class="nav-item">
-                        <a href="{{ url('/dashboard/backendproducts') }}"
-                           class="nav-link {{ Request::segment(2) == 'backendproducts' ? 'active' : '' }}">
-                            <i class="fab fa-product-hunt"></i>
-                            <p> Products </p>
-                        </a>
-                    </li>
-                @endcan
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
