@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\dashboard;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -14,6 +14,7 @@ class BackendProductFactory extends Factory
      *
      * @return array
      */
+
     public function definition()
     {
         return [

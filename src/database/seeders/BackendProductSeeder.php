@@ -3,8 +3,8 @@
 namespace Database\Seeders\dashboard;
 
 
+use App\Models\dashboard\BackendProduct;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Role;
 
 class BackendProductSeeder extends Seeder
 {
@@ -15,6 +15,6 @@ class BackendProductSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\dashboard\BackendProduct::factory(100)->create();
+        BackendProduct::factory(100)->create();
     }
 }
