@@ -3,6 +3,8 @@
 namespace laravelDashboard;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
+
 
 class DashboardServiceProvider extends ServiceProvider
 {
@@ -25,6 +27,7 @@ class DashboardServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Paginator::useBootstrap();
     }
 }
 
