@@ -12,7 +12,8 @@ trait ManageMigrations
         'RolesTableSeeder',
         'AdminTableSeeder',
         'AssignRolePermissionSeeder',
-        'PaymentSeeder'
+        'PaymentSeeder',
+        'BackendProductSeeder'
     ];
 
     private function seedData()
