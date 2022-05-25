@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Hash;
 
 $factory->define(\App\Models\dashboard\BackendProduct::User::class, function (Faker $faker) {
     return [
-        'name' => $this->faker->sentence(4,),
+        'name' => $this->faker->sentence(4),
         'short_description' => $this->faker->sentence(20),
         'description' => $this->faker->realText(1000),
         'image' => $this->faker->image,
