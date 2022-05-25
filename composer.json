@@ -13,11 +13,6 @@
       "laravelDashboard\\Packages\\": "src/Packages/"
     }
   },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
-  },
   "extra": {
     "component": "package",
     "branch-alias": {
@@ -36,5 +31,8 @@
       "email": "info@incubator-eg.com",
       "homepage": "https://incubator-eg.com/"
     }
-  ]
+  ],
+  "version": "8.0",
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
