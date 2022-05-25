@@ -1,31 +1,33 @@
 {
-    "name": "ahmed-bermawy/laravel-dashboard",
-    "description": "simple laravel dashboard that you can add it to your project at anytime",
-    "type": "library",
-    "require": {
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "laravelDashboard\\": "src/",
-            "laravelDashboard\\Packages\\": "src/Packages/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "laravelDashboard\\DashboardServiceProvider",
-                "laravelDashboard\\FilesServiceProvider"
-            ]
-        }
-    },
-    "authors": [
-        {
-            "name": "Incubator",
-            "email": "info@incubator-eg.com"
-        }
-    ],
-    "require": {
-        "illuminate/support": "^7.0"
+  "name": "ahmed-bermawy/laravel-dashboard",
+  "description": "simple laravel dashboard that you can add it to your project at anytime",
+  "type": "library",
+  "require": {
+    "illuminate/support": "^7.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "laravelDashboard\\": "src/",
+      "laravelDashboard\\Packages\\": "src/Packages/"
     }
+  },
+  "extra": {
+    "component": "package",
+    "branch-alias": {
+      "dev-master": "7.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "laravelDashboard\\DashboardServiceProvider",
+        "laravelDashboard\\FilesServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Incubator",
+      "email": "info@incubator-eg.com"
+    }
+  ]
 }
