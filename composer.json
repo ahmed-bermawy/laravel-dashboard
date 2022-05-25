@@ -25,6 +25,7 @@
             "email": "info@incubator-eg.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "require": {
+        "illuminate/support": "^7.0"
+    }
 }

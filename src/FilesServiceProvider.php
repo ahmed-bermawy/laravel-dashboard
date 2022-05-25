@@ -37,14 +37,13 @@ class FilesServiceProvider extends ServiceProvider
             ]);
         }
 
-        $seedsPath = $this->checkLaravelVersion();
-        $this->publishFiles($seedsPath);
+        $this->publishFiles();
         if (File::exists(base_path() . '/routes/dashboard/web.php')) {
             $this->loadFiles();
         }
     }
 
-    public function publishFiles($seedsPath)
+    public function publishFiles()
     {
         /**
          * Copy the package files, each file to its path
@@ -52,7 +51,7 @@ class FilesServiceProvider extends ServiceProvider
          */
         $this->publishes([
             __DIR__ . '/database/migrations/' => base_path('database/migrations/dashboard/'),
-            __DIR__ . '/database/seeders/' => base_path($seedsPath),
+            __DIR__ . '/database/seeders/' => base_path('database/seeds/dashboard/'),
             __DIR__ . '/Models/' => base_path('app/Models/dashboard/'),
             __DIR__ . '/Http/Controllers/' => base_path('app/Http/Controllers/dashboard/'),
             __DIR__ . '/Http/Requests/' => base_path('app/Http/Requests/dashboard/'),
@@ -78,17 +77,6 @@ class FilesServiceProvider extends ServiceProvider
      * else die
      */
 
-    public function checkLaravelVersion()
-    {
-        $version = substr(app()->version(), 0, 1);
-        if ($version == '7') {
-            return $seedsPath = 'database/seeds/dashboard/';
-        } else if ($version == '8'||$version == '9') {
-            return $seedsPath = 'database/seeders/dashboard/';
-        } else {
-            die();
-        }
-    }
 
     public function createEditPermissionMigration()
     {
