@@ -13,10 +13,15 @@
       "laravelDashboard\\Packages\\": "src/Packages/"
     }
   },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
   "extra": {
     "component": "package",
     "branch-alias": {
-      "7.x-dev": "dev-main"
+      "dev-main": "7.x-dev"
     },
     "laravel": {
       "providers": [
