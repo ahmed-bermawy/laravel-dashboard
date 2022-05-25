@@ -18,7 +18,7 @@ class BackendProductFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->sentence(4,),
+            'name' => $this->faker->sentence(4),
             'short_description' => $this->faker->sentence(20),
             'description' => $this->faker->realText(1000),
             'image' => $this->faker->image,
