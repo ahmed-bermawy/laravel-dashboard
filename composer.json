@@ -3,7 +3,8 @@
   "description": "simple laravel dashboard that you can add it to your project at anytime",
   "type": "library",
   "require": {
-    "illuminate/support": "^7.0"
+    "illuminate/support": "^7.0",
+    "php": "^7.2.5|^8.0"
   },
   "license": "MIT",
   "autoload": {
@@ -15,7 +16,7 @@
   "extra": {
     "component": "package",
     "branch-alias": {
-      "dev-main": "7.x-dev"
+      "7.x-dev": "dev-main"
     },
     "laravel": {
       "providers": [
