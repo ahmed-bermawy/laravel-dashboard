@@ -3,8 +3,7 @@
   "description": "simple laravel dashboard that you can add it to your project at anytime",
   "type": "library",
   "require": {
-    "illuminate/support": "^8.0",
-    "php": "^7.3|^8.0"
+    "php": ">= 7.3"
   },
   "license": "MIT",
   "autoload": {
@@ -12,11 +11,6 @@
       "laravelDashboard\\": "src/",
       "laravelDashboard\\Packages\\": "src/Packages/"
     }
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
   },
   "extra": {
     "component": "package",
@@ -33,7 +27,11 @@
   "authors": [
     {
       "name": "Incubator",
-      "email": "info@incubator-eg.com"
+      "email": "info@incubator-eg.com",
+      "homepage": "https://incubator-eg.com/"
     }
-  ]
+  ],
+  "version": "8.0",
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
