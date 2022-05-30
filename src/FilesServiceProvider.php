@@ -51,7 +51,7 @@ class FilesServiceProvider extends ServiceProvider
          */
         $this->publishes([
             __DIR__ . '/database/migrations/' => base_path('database/migrations/dashboard/'),
-            __DIR__ . '/database/seeders/' => base_path('database/seeds/dashboard/'),
+            __DIR__ . '/database/seeders/' => base_path('database/seeders/dashboard/'),
             __DIR__ . '/Models/' => base_path('app/Models/dashboard/'),
             __DIR__ . '/Http/Controllers/' => base_path('app/Http/Controllers/dashboard/'),
             __DIR__ . '/Http/Requests/' => base_path('app/Http/Requests/dashboard/'),
