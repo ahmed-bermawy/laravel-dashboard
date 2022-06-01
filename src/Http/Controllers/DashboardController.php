@@ -36,7 +36,12 @@ class DashboardController extends Controller
         $this->imagePath = 'uploads/' . $this->controllerName . '/';
         $this->pageTitle = ucfirst($this->controllerName);
         $model_name = ($model_name === '') ? $this->pageTitle : $model_name;
-        $class = "App\Models\dashboard\\$model_name";
+
+        if(class_exists("App\Models\dashboard\\$model_name")){
+            $class = "App\Models\dashboard\\$model_name";
+        }else{
+            $class = "App\Models\\$model_name";
+        }
         try {
             $this->tableModel = new $class();
 
