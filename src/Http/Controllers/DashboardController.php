@@ -22,15 +22,8 @@ class DashboardController extends Controller
 
     public function __construct($model_name = '')
     {
-        $this->controllerName = strtolower(
-            str_replace(
-                'Controller', '',
-                str_replace(
-                    __NAMESPACE__ . '\\', '',
-                    get_class($this)
-                )
-            )
-        );
+        $controllerPathArray = explode('\\', get_class($this));
+        $this->controllerName = strtolower(str_replace('Controller', '', end($controllerPathArray)));
 
         $this->path = '/dashboard/'.$this->controllerName.'s/';
         $this->imagePath = 'uploads/' . $this->controllerName . '/';
