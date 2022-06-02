@@ -22,24 +22,18 @@ class DashboardController extends Controller
 
     public function __construct($model_name = '')
     {
-        $this->controllerName = strtolower(
-            str_replace(
-                'Controller', '',
-                str_replace(
-                    __NAMESPACE__ . '\\', '',
-                    get_class($this)
-                )
-            )
-        );
 
-        $this->path = '/dashboard/'.$this->controllerName.'s/';
+        $controllerPathArray = explode('\\', get_class($this));
+        $this->controllerName = strtolower(str_replace('Controller', '', end($controllerPathArray)));
+
+        $this->path = '/dashboard/' . $this->controllerName . 's/';
         $this->imagePath = 'uploads/' . $this->controllerName . '/';
         $this->pageTitle = ucfirst($this->controllerName);
         $model_name = ($model_name === '') ? $this->pageTitle : $model_name;
 
-        if(class_exists("App\Models\dashboard\\$model_name")){
+        if (class_exists("App\Models\dashboard\\$model_name")) {
             $class = "App\Models\dashboard\\$model_name";
-        }else{
+        } else {
             $class = "App\Models\\$model_name";
         }
         try {
@@ -55,7 +49,7 @@ class DashboardController extends Controller
 
     public function index(Request $request)
     {
-        $this->authorize($this->controllerName.'-view');
+        $this->authorize($this->controllerName . '-view');
 
         $display['path'] = $this->path;
         $display['pageTitle'] = $this->pageTitle;
@@ -77,7 +71,7 @@ class DashboardController extends Controller
 
     public function create()
     {
-        $this->authorize($this->controllerName.'-create');
+        $this->authorize($this->controllerName . '-create');
 
         $display['path'] = $this->path;
         $display['pageTitle'] = $this->pageTitle . ' | Create';
