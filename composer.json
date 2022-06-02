@@ -2,8 +2,12 @@
   "name": "ahmed-bermawy/laravel-dashboard",
   "description": "simple laravel dashboard that you can add it to your project at anytime",
   "type": "library",
+
   "require": {
     "php": ">= 7.3"
+  },
+  "require-dev": {
+    "laravel/framework": "^7.0"
   },
   "license": "MIT",
   "autoload": {
