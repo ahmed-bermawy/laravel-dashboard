@@ -8,9 +8,6 @@
     "laravel/framework": ">=v8.0.0"
 
   },
-  "require-dev": {
-    "laravel/framework": "^8.0"
-  },
   "license": "MIT",
   "autoload": {
     "psr-4": {
