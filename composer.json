@@ -5,8 +5,6 @@
 
   "require": {
     "php": ">= 7.3",
-    "laravel/framework": ">=v8.0.0"
-
   },
   "license": "MIT",
   "autoload": {
@@ -34,7 +32,6 @@
       "homepage": "https://incubator-eg.com/"
     }
   ],
-  "version": "8.0",
   "minimum-stability": "dev",
   "prefer-stable": true
 }
