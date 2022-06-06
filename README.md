@@ -96,7 +96,7 @@ default password: 12345678
 # Documentation
 
 For full documentation please see
-<a href="laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard </a>.
+<a href="https://laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard </a>.
 
 <hr>
 
