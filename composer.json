@@ -1,6 +1,6 @@
 {
   "name": "ahmed-bermawy/laravel-dashboard",
-  "description": "simple laravel dashboard that you can add it to your project at anytime",
+  "description": "Simple laravel dashboard that you can install into your project at anytime",
   "type": "library",
   "require": {
     "php": ">= 7.3"
@@ -29,7 +29,7 @@
   },
   "authors": [
     {
-      "name": "Incubator",
+      "name": "Ahmed Bermawy",
       "email": "info@incubator-eg.com",
       "homepage": "https://incubator-eg.com/"
     }
