@@ -96,13 +96,14 @@ default password: 12345678
 # Documentation
 
 For full documentation please see
-<a href="https://laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard Documentation</a>.
+<a target="_blank" href="https://laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard Documentation</a>.
 
 <hr>
 
 # Demo
+You can try our demo and make CURD operations as much as you can
 
-<a href="https://laravel-dashbaord-demo.incubator-eg.com/dashboard/login/">Laravel Dashboard Demo</a>.
+Link for the demo <a target="_blank" href="https://laravel-dashbaord-demo.incubator-eg.com/dashboard/login/">Laravel Dashboard Demo</a>.
 
 Dashboard credential:
 
