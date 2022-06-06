@@ -1,6 +1,6 @@
-<p style="text-align: center">
+<p align="center">
     <a href="https://incubator-eg.com" target="_blank">
-        <img alt="logo" src="https://incubator-eg.com/asset/img/brand.png" width="400">
+        <img alt="logo" src="https://incubator-eg.com/asset/img/brand.png" width="300">
     </a>
 </p>
 
