@@ -87,7 +87,7 @@ php artisan serve
 
 ```
 default dashboard url: http://127.0.0.1:8000/dashboard/login
-default username: admin@admin.com
+default email: admin@admin.com
 default password: 12345678
 ```
 
@@ -96,8 +96,19 @@ default password: 12345678
 # Documentation
 
 For full documentation please see
-<a href="https://laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard </a>.
+<a href="https://laravel-dashbaord-documentation.incubator-eg.com/">Laravel Dashboard Documentation</a>.
 
+<hr>
+
+# Demo
+
+<a href="https://laravel-dashbaord-demo.incubator-eg.com/dashboard/login/">Laravel Dashboard Demo</a>.
+
+Dashboard credential:
+
+email: admin@admin.com
+
+password: 12345678
 <hr>
 
 # Suggestions & Issues
