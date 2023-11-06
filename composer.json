@@ -3,10 +3,10 @@
   "description": "Simple laravel dashboard that you can install into your project at anytime",
   "type": "library",
   "require": {
-    "php": ">= 7.3"
+    "php": ">= 8.0"
   },
   "require-dev": {
-    "laravel/framework": "^8.0"
+    "laravel/framework": "^9.0"
   },
   "license": "MIT",
   "autoload": {
@@ -18,7 +18,7 @@
   "extra": {
     "component": "package",
     "branch-alias": {
-      "dev-main": "8.x-dev"
+      "dev-main": "9.x-dev"
     },
     "laravel": {
       "providers": [
