@@ -11,12 +11,13 @@
 | 7.x             | 7.0             | `>= 7.2.5`  |
 | 8.x             | 8.0             | `>= 7.3`    |
 | 8.x             | 9.0             | `>= 8.0`    |
+| 10.x            | 10.0            | `>= 8.1`    |
 
 # Documentation
 
 ## Please follow these steps to install dashboard successfully
 
-### 1. Make sure you have nodejs, npm and yarn installed on your machine
+### 1. Make sure you have Node.js, npm and yarn installed on your machine before you start
 
 ### 2. Run composer require PackageName
 
